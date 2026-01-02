@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { FiCheck, FiArrowRight, FiCalendar, FiDollarSign, FiPackage, FiX } from "react-icons/fi";
@@ -40,7 +40,7 @@ const benefits = [
   },
 ];
 
-export default function SubscriptionsPage() {
+function SubscriptionsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const editId = searchParams.get("edit");
@@ -395,3 +395,21 @@ export default function SubscriptionsPage() {
   );
 }
 
+export default function SubscriptionsPage() {
+  return (
+    <Suspense fallback={
+      <div className="bg-gray-50 min-h-screen py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+              PrepBox Subscriptions
+            </h1>
+            <p className="text-lg text-gray-500">Loading...</p>
+          </div>
+        </div>
+      </div>
+    }>
+        <SubscriptionsContent />
+    </Suspense>
+  );
+}
