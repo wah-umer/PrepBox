@@ -57,7 +57,7 @@ PrepBox is a meal kit e-commerce platform that allows customers to browse, purch
 
 1. **Clone the repository** (if applicable) or navigate to the project directory:
 ```bash
-cd eebs
+cd folder
 ```
 
 2. **Install dependencies**:
@@ -78,7 +78,7 @@ http://localhost:3000
 ## 📁 Project Structure
 
 ```
-eebs/
+folder/
 ├── app/                          # Next.js 14 App Router directory
 │   ├── layout.tsx               # Root layout with Header and Footer
 │   ├── page.tsx                 # Homepage with Hero, Featured Products, Categories
