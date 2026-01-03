@@ -17,25 +17,28 @@ export default function AboutPage() {
   return (
     <div className="bg-stone-50 min-h-screen py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-black mb-8">About PrepBox</h1>
+        <h1 className="text-4xl font-bold text-black mb-8">About Us</h1>
         <div className="prose prose-lg max-w-none mb-12">
           <p className="text-gray-700 mb-4">
-            PrepBox: Where convenience meets real food.
+            PrepBox was born out of one universal struggle:
+            being hungry but absolutely not in the mood to cook.
           </p>
           <p className="text-gray-700 mb-4">
-            We're on a mission to make home-cooked meals accessible to everyone — 
-            minus the hard part. No more grocery runs, no more food waste, no more 
-            complicated recipes that take hours to prepare.
+            After long days, cooking isn't hard - deciding, shipping, and prepping is. So we fixed that.
           </p>
           <p className="text-gray-700 mb-4">
-            Every PrepBox comes with fresh, pre-portioned ingredients and an 
-            easy-to-follow recipe card. From fridge to plate in 15 minutes. 
-            That's our promise.
+            Founded by Areeba, Areesha, and Hamza, PrepBox delivers ready-to-cook meal kits with fresh, pre-portioned ingredients and simple recipie cards, so dinner takes 10-15 minutes, not your entire evening. 
           </p>
           <p className="text-gray-700 mb-4">
-            Whether you're a busy professional, a cooking beginner, or someone 
-            who just wants dinner done fast — PrepBox is here to make your 
-            kitchen smarter, not harder.
+            No grocery runs. No food waste. No "what should I make?" breakdowns.
+            Just good food that actually fits into real life.
+          </p>
+          <p className="text-gray-700 mb-4">
+            We don't ask you to cook more.
+            We ask you to stress less.
+          </p>
+          <p className="text-gray-700 mb-4 font-semibold">
+            PrepBox - convenience without compromise.
           </p>
         </div>
 
